@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --color-solar-green: #7ED957;
+  --color-solar-blue: #2E3192;
+  --color-solar-blue-dark: #1e2060;
+  --color-solar-grey: #f5f5f5;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply text-gray-800 bg-white;
+     overflow-x: hidden;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .testimonial-card {
+    flex: 0 0 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .testimonial-card {
+    flex: 0 0 33.333%;
+  }
+}
+
