@@ -15,12 +15,13 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className={`w-full z-50 transition-all duration-300 ${isSticky ? 'fixed top-0 bg-white shadow-lg py-2' : 'absolute bg-transparent py-6'}`}>
+    <nav className={`w-full z-50 transition-all duration-300 ${isSticky ? 'fixed top-0 bg-[#2d4c76]/60 backdrop-blur-md shadow-lg py-2 border-b border-white/20' 
+  : 'absolute bg-transparent py-6'}`}>
       <div className="container mx-auto px-4 flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <div className=" flex items-center justify-center border border-white/20">
-           <img src="/images/logo.png" alt="" className=" h-16 w-auto object-cover bg-white" />
+          <div className=" flex items-center justify-center ">
+           <img src="/images/logo.png" alt="" className=" h-16 w-auto object-cover bg-white rounded-md" />
           </div> 
         </div>
 
@@ -30,7 +31,7 @@ export default function Navbar() {
             <a 
               key={item} 
               href={`#${item.toLowerCase()}`} 
-              className={`font-semibold transition-colors ${isSticky ? 'text-solar-blue hover:text-solar-green' : 'text-white hover:text-solar-green'}`}
+              className={'font-semibold transition-colors text-white hover:text-solar-green'}
             >
               {item}
             </a>

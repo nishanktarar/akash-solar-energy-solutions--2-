@@ -12,6 +12,8 @@ import Blog from './components/Blog';
 import Clientele from './components/Clientele';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Marquee from './components/Marquee';
+import ScrollToTop from './components/ScrollToTop';
 
 export default function App() {
   return (
@@ -26,10 +28,12 @@ export default function App() {
       <Testimonials />
       <CTA />
       <Blog />
+      <Marquee/>
       <FAQ />
       <Clientele />
       <Contact />
       <Footer />
+      <ScrollToTop/>
     </div>
   );
 }
