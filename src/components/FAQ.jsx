@@ -33,8 +33,27 @@ export default function FAQ() {
   };
 
   return (
-    <section id="faq" className="py-24 bg-white">
-      <div className="container mx-auto px-4">
+    <section id="faq" className="relative overflow-hidden py-24 bg-white">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
+        <motion.div 
+          initial={{ opacity: 10, x: -50 }}
+          whileInView={{ opacity: 1, x: 40 }}
+          transition={{ duration: 1 }}
+          className="absolute -left-16 top-32 w-72 h-[450px]"
+        >
+          <img src="/images/1.webp" alt="" className="w-full h-full object-cover rounded-3xl rotate-[-6deg] shadow-2xl" referrerPolicy="no-referrer" />
+        </motion.div>
+        
+        <motion.div 
+          initial={{ opacity: 10, x: 50 }}
+          whileInView={{ opacity: 1, x: -40 }}
+          transition={{ duration: 1, delay: 0.2 }}
+          className="absolute -right-16 bottom-10 w-72 h-[450px]"
+        >
+          <img src="/images/2.webp" alt="" className="w-full h-full object-cover rounded-3xl rotate-[6deg] shadow-2xl" referrerPolicy="no-referrer" />
+        </motion.div>
+      </div>
+      <div className="container relative z-10 mx-auto px-4">
         <div className="text-center mb-16">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}

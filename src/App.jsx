@@ -1,19 +1,19 @@
-import TopBar from './components/TopBar';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Services from './components/Services';
-import CalculatorSection from './components/CalculatorSection';
-import Projects from './components/Projects';
-import Testimonials from './components/Testimonials';
-import CTA from './components/CTA';
-import FAQ from './components/FAQ';
-import Blog from './components/Blog';
-import Clientele from './components/Clientele';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import Marquee from './components/Marquee';
-import ScrollToTop from './components/ScrollToTop';
+import TopBar from "./components/TopBar";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Services from "./components/Services";
+import CalculatorSection from "./components/CalculatorSection";
+import Projects from "./components/Projects";
+import Testimonials from "./components/Testimonials";
+import CTA from "./components/CTA";
+import FAQ from "./components/FAQ";
+import Blog from "./components/Blog";
+import Clientele from "./components/Clientele";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import Marquee from "./components/Marquee";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
   return (
@@ -24,16 +24,17 @@ export default function App() {
       <About />
       <Services />
       <CalculatorSection />
+      <Marquee variant="green" />
       <Projects />
       <Testimonials />
       <CTA />
       <Blog />
-      <Marquee/>
+      <Marquee />
       <FAQ />
       <Clientele />
       <Contact />
       <Footer />
-      <ScrollToTop/>
+      <ScrollToTop />
     </div>
   );
 }
